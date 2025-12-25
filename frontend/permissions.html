@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Permissions - NeuroGuard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">NeuroGuard 🧠</div>
+        <div class="nav-links">
+            <a href="dashboard.html" class="btn btn-secondary">Dashboard</a>
+            <a href="privacy.html" class="btn btn-secondary">Privacy</a>
+            <a href="permissions.html" class="btn btn-primary">Permissions</a>
+            <a href="index.html" class="btn btn-secondary" style="border: none;">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header style="margin-bottom: 3rem;">
+            <h2 style="color: var(--color-prune);">Application Permissions</h2>
+            <p style="opacity: 0.7;">Manage which apps can access your neural data and how.</p>
+        </header>
+
+        <div class="glass-card">
+
+            <!-- App Item 1 -->
+            <div class="app-item">
+                <div style="flex: 1;">
+                    <h3 style="color: var(--color-prune-dark); margin-bottom: 0.5rem;">VR Training Arena</h3>
+                    <div class="permission-badges">
+                        <span class="perm-allow">✔ Motor Intent</span>
+                        <span class="perm-block">❌ Emotional State</span>
+                        <span class="perm-block">❌ Memory Recall</span>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 0.5rem; align-items: center;">
+                    <select class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                        <option value="allow">Allow</option>
+                        <option value="mask">Mask (Noise)</option>
+                        <option value="block">Block</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- App Item 2 -->
+            <div class="app-item">
+                <div style="flex: 1;">
+                    <h3 style="color: var(--color-prune-dark); margin-bottom: 0.5rem;">Mindful Meditation</h3>
+                    <div class="permission-badges">
+                        <span class="perm-allow">✔ Alpha Waves</span>
+                        <span class="perm-mask">⚠️ Emotional State</span>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 0.5rem; align-items: center;">
+                    <select class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                        <option value="mask">Mask (Noise)</option>
+                        <option value="allow">Allow</option>
+                        <option value="block">Block</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- App Item 3 -->
+            <div class="app-item">
+                <div style="flex: 1;">
+                    <h3 style="color: var(--color-prune-dark); margin-bottom: 0.5rem;">Social Connect</h3>
+                    <div class="permission-badges">
+                        <span class="perm-block">❌ All Neural Data</span>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 0.5rem; align-items: center;">
+                    <select class="btn btn-secondary"
+                        style="padding: 0.5rem 1rem; font-size: 0.9rem; border-color: var(--color-danger); color: var(--color-danger);">
+                        <option value="block">Block</option>
+                        <option value="mask">Mask (Noise)</option>
+                        <option value="allow">Allow</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
