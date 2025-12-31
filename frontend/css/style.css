@@ -310,3 +310,24 @@ canvas {
     background: rgba(244, 67, 54, 0.2);
     color: #C62828;
 }
+
+/* Alert Animations */
+@keyframes alert-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(244, 67, 54, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(244, 67, 54, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(244, 67, 54, 0); }
+}
+
+.alert-banner {
+    animation: alert-pulse 2s infinite;
+}
+
+.log-row:hover td {
+    color: var(--color-prune-dark);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.severity-tag {
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+}

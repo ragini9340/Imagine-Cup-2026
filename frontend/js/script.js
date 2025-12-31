@@ -26,6 +26,40 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (page === 'privacy.html') {
         initPrivacyControls();
     }
+} else if (page === 'logs.html') {
+    initLogs();
+} else if (page === 'alerts.html') {
+    initAlerts();
+}
+});
+
+function initAlerts() {
+const actionButtons = document.querySelectorAll('.alert-actions .btn-primary');
+actionButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const alertItem = btn.closest('.alert-item');
+        alertItem.style.opacity = '0.5';
+        alertItem.style.pointerEvents = 'none';
+        btn.innerText = 'Actioned';
+        alert('Security action initiated: Access ' + (btn.innerText.toLowerCase().includes('revoke') ? 'Revoked' : 'Blocked'));
+    });
+});
+}
+
+function initLogs() {
+const searchBar = document.querySelector('.search-bar');
+const logRows = document.querySelectorAll('.log-row');
+
+if (!searchBar) return;
+
+searchBar.addEventListener('input', (e) => {
+    const term = e.target.value.toLowerCase();
+    logRows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(term) ? '' : 'none';
+    });
+});
+}
 });
 
 function updateToggleIcon(isDark) {
@@ -109,3 +143,4 @@ function initPrivacyControls() {
     slider.addEventListener('change', (e) => updatePrivacy(e.target.value));
 
 }
+

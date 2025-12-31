@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparency Logs - NeuroGuard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <style>
+        .log-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 10px;
+            margin-top: 1rem;
+        }
+
+        .log-table th {
+            text-align: left;
+            padding: 1rem;
+            color: var(--color-prune);
+            opacity: 0.7;
+            font-weight: 600;
+        }
+
+        .log-row {
+            background: rgba(255, 255, 255, 0.4);
+            transition: transform 0.2s ease;
+        }
+
+        .log-row:hover {
+            transform: scale(1.01);
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        .log-row td {
+            padding: 1.2rem;
+        }
+
+        .log-row td:first-child {
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+            font-family: monospace;
+            font-weight: bold;
+        }
+
+        .log-row td:last-child {
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        .status-blocked {
+            color: var(--color-danger);
+            font-weight: bold;
+        }
+
+        .status-filtered {
+            color: var(--color-warning);
+            font-weight: bold;
+        }
+
+        .status-allowed {
+            color: var(--color-success);
+            font-weight: bold;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 12px;
+            border: 1px solid var(--color-glass-border);
+            background: var(--color-glass);
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            color: var(--color-prune);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">NeuroGuard 🧠</div>
+        <div class="nav-links">
+            <button id="themeToggle" class="btn btn-secondary"
+                style="border: none; background: transparent; font-size: 1.3rem;">☀️</button>
+            <a href="dashboard.html" class="btn btn-secondary">Dashboard</a>
+            <a href="alerts.html" class="btn btn-secondary">Alerts</a>
+            <a href="logs.html" class="btn btn-primary">Logs</a>
+            <a href="privacy.html" class="btn btn-secondary">Privacy</a>
+            <a href="permissions.html" class="btn btn-secondary">Permissions</a>
+            <a href="index.html" class="btn btn-secondary" style="border: none;">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header style="margin-bottom: 3rem;">
+            <h2 style="color: var(--color-prune);">Transparency Logs</h2>
+            <p style="opacity: 0.7;">A complete audit trail of how your neural data is being accessed.</p>
+        </header>
+
+        <input type="text" class="search-bar" placeholder="Search by app or action...">
+
+        <div class="glass-card">
+            <table class="log-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Application</th>
+                        <th>Action</th>
+                        <th>Resource</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="log-row">
+                        <td>14:32:05</td>
+                        <td>Game App</td>
+                        <td>Data Request</td>
+                        <td>Gamma Oscillation</td>
+                        <td><span class="status-blocked">Blocked</span></td>
+                    </tr>
+                    <tr class="log-row">
+                        <td>14:31:12</td>
+                        <td>Sleep Tracker</td>
+                        <td>Continuous Monitor</td>
+                        <td>Delta Waves</td>
+                        <td><span class="status-allowed">Allowed</span></td>
+                    </tr>
+                    <tr class="log-row">
+                        <td>14:28:45</td>
+                        <td>MindFocus Pro</td>
+                        <td>Privacy Override</td>
+                        <td>Raw EEG Stream</td>
+                        <td><span class="status-blocked">Terminated</span></td>
+                    </tr>
+                    <tr class="log-row">
+                        <td>14:25:30</td>
+                        <td>Zen Meditation</td>
+                        <td>Signal Storage</td>
+                        <td>Alpha/Theta Ratio</td>
+                        <td><span class="status-filtered">Filtered (Anonymized)</span></td>
+                    </tr>
+                    <tr class="log-row">
+                        <td>14:20:15</td>
+                        <td>SocialConnect</td>
+                        <td>Identity Verification</td>
+                        <td>Neural Signature</td>
+                        <td><span class="status-allowed">Allowed (Encrypted)</span></td>
+                    </tr>
+                    <tr class="log-row">
+                        <td>14:15:00</td>
+                        <td>Neural Ads Engine</td>
+                        <td>Polling Request</td>
+                        <td>Subliminal Response</td>
+                        <td><span class="status-blocked">Blocked</span></td>
+                    </tr>
+                    <tr class="log-row">
+                        <td>14:10:42</td>
+                        <td>Neural Ads Engine</td>
+                        <td>Polling Request</td>
+                        <td>Subliminal Response</td>
+                        <td><span class="status-blocked">Blocked</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
