@@ -1,14 +1,14 @@
 :root {
-    --color-prune: #4E0631;
-    /* Burgundy Rose */
-    --color-prune-dark: #360422;
-    --color-bluah: #ECF4A0;
-    /* Sour Lemon */
-    --color-text: #4E0631;
+    --color-prune: #664343;
+    /* Dim Gray */
+    --color-prune-dark: #4A3131;
+    --color-bluah: #FFF0D1;
+    /* Blanche Dalmond */
+    --color-text: #664343;
     --color-white: #ffffff;
     --color-glass: rgba(255, 255, 255, 0.4);
-    --color-glass-border: rgba(78, 6, 49, 0.2);
-    --shadow-soft: 0 8px 32px 0 rgba(78, 6, 49, 0.15);
+    --color-glass-border: rgba(102, 67, 67, 0.2);
+    --shadow-soft: 0 8px 32px 0 rgba(102, 67, 67, 0.15);
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     /* Functional Colors */
@@ -19,15 +19,15 @@
 
 /* Dark Theme Variables */
 body.dark-theme {
-    --color-prune: #ECF4A0;
-    /* Swap Prune with Lemon for contrast */
-    --color-prune-dark: #f2f8c0;
-    --color-bluah: #1A0211;
-    /* Very dark burgundy */
-    --color-text: #ECF4A0;
-    --color-white: #1A0211;
+    --color-prune: #FFF0D1;
+    /* Swap Prune with Blanche Dalmond for contrast */
+    --color-prune-dark: #FFE4B5;
+    --color-bluah: #3D2828;
+    /* Very dark Dim Gray */
+    --color-text: #FFF0D1;
+    --color-white: #3D2828;
     --color-glass: rgba(0, 0, 0, 0.4);
-    --color-glass-border: rgba(236, 244, 160, 0.2);
+    --color-glass-border: rgba(255, 240, 209, 0.2);
     --shadow-soft: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
 }
 
