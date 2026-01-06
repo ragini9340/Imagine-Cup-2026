@@ -2,7 +2,7 @@
 
 **Advanced Privacy Firewall for Neural Signals**
 
-NeuroGuard is a cutting-edge privacy layer designed for Brain-Computer Interfaces (BCI). It acts as a "Neural Firewall," ensuring that your thoughts, emotions, and sensitive brain data remain under your total control. Built for the Microsoft Imagine Cup 2026, NeuroGuard bridges the gap between neural innovation and data sovereignty.
+NeuroGuard is a cutting-edge privacy layer designed for Brain-Computer Interfaces (BCI). It acts as a "Neural Firewall," ensuring that your thoughts, emotions, and sensitive brain data remain under your total control. NeuroGuard bridges the gap between neural innovation and data sovereignty.
 
 ---
 
@@ -102,9 +102,10 @@ NeuroGuard employs **Differential Privacy** techniques to add mathematical noise
 
 ---
 
-## 🏆 Imagine Cup 2026
+## 👥 Contributors
 
-This project is developed as part of the Microsoft Imagine Cup 2026, focusing on the intersection of **Health** and **Technology Ethics**.
+- **Hardi** - Backend & Core Logic
+- **Ragini Shukla** ([@ragini9340](https://github.com/ragini9340)) - Frontend Design & Implementation
 
 ---
 
