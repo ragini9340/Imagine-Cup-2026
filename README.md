@@ -104,8 +104,8 @@ NeuroGuard employs **Differential Privacy** techniques to add mathematical noise
 
 ## 👥 Contributors
 
-- **Hardik Mihani** - Backend & Core Logic
 - **Ragini Shukla** ([@ragini9340](https://github.com/ragini9340)) - Frontend Design & Implementation
+- **Hardik Mihani** - Backend & Core Logic
 
 ---
 
